@@ -1,0 +1,53 @@
+# --- Core ---
+fastapi==0.115.0
+uvicorn==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+pyyaml==6.0.2
+
+# --- PDF + OCR ---
+pymupdf==1.24.9         # PyMuPDF for PDF parsing
+pdfplumber==0.11.4      # alternative PDF extractor
+pytesseract==0.3.13     # Python wrapper for Tesseract OCR
+pillow==10.4.0          # image handling
+ocrmypdf==16.4.0        # optional OCR pipeline
+
+# --- Text Processing & NLP ---
+regex==2024.7.24
+spacy==3.7.5
+rank-bm25==0.2.2
+nltk==3.9.1
+scikit-learn==1.5.1
+
+# --- Embeddings / Rerankers ---
+torch==2.3.1
+transformers==4.44.2
+sentence-transformers==3.0.1
+
+# --- Vector DBs / Storage ---
+faiss-gpu==1.7.2        # use faiss-gpu==1.7.4 if CUDA available
+duckdb==1.1.0
+sqlite-utils==3.37.0
+
+# --- Graph DB (Neo4j) ---
+py2neo==2021.2.4        # Python connector for Neo4j
+
+# --- Token Counting & Packing ---
+tiktoken==0.7.0
+
+# --- Cache / Message Broker ---
+redis==5.0.8
+
+# --- Utilities ---
+numpy==1.26.4           # safe with faiss
+scipy==1.14.1
+pandas==2.2.2
+rich==13.8.1            # pretty logging
+loguru==0.7.2
+requests==2.32.3
+
+
+
+
+
+##python ingest/ask_redis.py "What is the purpose of the IMTAR-21 certification process?"
